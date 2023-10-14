@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.list-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  /* border: 1px solid #ececec; */
+}
+
+.list {
+  width: 16rem;
+  /* border: 1px solid #ececec; */
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ececec;
+  user-select: none;
+  cursor: pointer;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-left: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-right: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.gradient-one {
+  background-color: rgb(240, 171, 252);
+  background-image: radial-gradient(
+      at 16% 3%,
+      rgb(228, 228, 231) 0,
+      transparent 17%
+    ),
+    radial-gradient(at 45% 23%, rgb(131, 24, 67) 0, transparent 60%),
+    radial-gradient(at 32% 5%, rgb(249, 168, 212) 0, transparent 21%),
+    radial-gradient(at 84% 65%, rgb(75, 85, 99) 0, transparent 78%),
+    radial-gradient(at 62% 42%, rgb(30, 41, 59) 0, transparent 38%),
+    radial-gradient(at 9% 72%, rgb(109, 40, 217) 0, transparent 70%);
+}
+
+.text-gradient-one {
+  background-image: linear-gradient(
+    65deg,
+    hsl(240deg 100% 20%) 1%,
+    hsl(289deg 100% 21%) 31%,
+    hsl(315deg 100% 27%) 45%,
+    hsl(329deg 100% 36%) 56%,
+    hsl(337deg 100% 43%) 66%,
+    hsl(357deg 91% 59%) 75%,
+    hsl(17deg 100% 59%) 82%,
+    hsl(34deg 100% 53%) 89%,
+    hsl(45deg 100% 50%) 95%,
+    hsl(55deg 100% 50%) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+* {
+  margin: 0px;
+}
